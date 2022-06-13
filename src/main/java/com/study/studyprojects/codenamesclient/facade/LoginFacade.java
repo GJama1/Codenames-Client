@@ -2,6 +2,7 @@ package com.study.studyprojects.codenamesclient.facade;
 
 import com.study.studyprojects.codenamesclient.controller.SelectGameController;
 import com.study.studyprojects.codenamesclient.service.GuiService;
+import com.study.studyprojects.codenamesclient.utils.ControllerInfoContainer;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -31,7 +32,8 @@ public class LoginFacade {
 
         try {
 
-            GuiService.loadSelectGameScene(username);
+            ControllerInfoContainer.labelMap.put("labelUsername", username);
+            GuiService.loadSelectGameScene();
 
         } catch (IOException e) {
 

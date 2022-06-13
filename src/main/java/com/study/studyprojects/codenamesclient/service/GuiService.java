@@ -4,6 +4,7 @@ import com.study.studyprojects.codenamesclient.controller.LoginController;
 import com.study.studyprojects.codenamesclient.controller.RegistrationController;
 import com.study.studyprojects.codenamesclient.controller.SelectGameController;
 import com.study.studyprojects.codenamesclient.facade.LoginFacade;
+import com.study.studyprojects.codenamesclient.utils.ControllerInfoContainer;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -67,12 +68,14 @@ public class GuiService extends Application {
 
     }
 
-    public static void loadSelectGameScene(String username) throws IOException {
+    public static void loadSelectGameScene() throws IOException {
 
         log.info("Loading select game scene");
 
         FXMLLoader fxmlLoader = new FXMLLoader(GuiService.class.getResource("/view/selectgame.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 800);
+
+        String username = ControllerInfoContainer.labelMap.get("labelUsername");
 
         SelectGameController selectGameController = fxmlLoader.getController();
         selectGameController.setUsername(username);

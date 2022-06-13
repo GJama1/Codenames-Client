@@ -1,5 +1,6 @@
 package com.study.studyprojects.codenamesclient;
 
+import com.study.studyprojects.codenamesclient.controller.SelectGameController;
 import com.study.studyprojects.codenamesclient.service.GuiService;
 import lombok.extern.slf4j.Slf4j;
 
