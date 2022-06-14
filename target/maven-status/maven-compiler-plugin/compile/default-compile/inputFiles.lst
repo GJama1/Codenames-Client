@@ -1,3 +1,8 @@
-/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/HelloController.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/service/GuiService.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/controller/SelectGameController.java
 /home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/Main.java
-/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/GuiLoader.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/facade/SelectGameFacade.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/facade/RegistrationFacade.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/controller/RegistrationController.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/controller/LoginController.java
+/home/gjama/IdeaProjects/Codenames Client/src/main/java/com/study/studyprojects/codenamesclient/facade/LoginFacade.java
