@@ -20,6 +20,9 @@ public class RegistrationController {
 
         RegistrationFacade.signUp(tfUsername.getText(), pfPassword.getText());
 
+        tfUsername.deleteText(0, tfUsername.getLength());
+        pfPassword.deleteText(0, pfPassword.getLength());
+
     }
 
     @FXML void onLoginButtonClick() {

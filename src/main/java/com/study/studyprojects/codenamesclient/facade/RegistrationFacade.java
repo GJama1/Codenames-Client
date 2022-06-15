@@ -39,20 +39,18 @@ public class RegistrationFacade {
         if (username.isBlank()) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Username cannot be blank!");
+            alert.setContentText("Username cannot be blank!");
             alert.show();
             return;
         }
         else if (password.isBlank()) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Password cannot be blank!");
+            alert.setContentText("Password cannot be blank!");
             alert.show();
             return;
 
         }
-
-
 
         try {
 
@@ -99,10 +97,6 @@ public class RegistrationFacade {
             log.error("Method threw an exception. Message: {}", e.getMessage());
             e.printStackTrace();
         }
-
-
-
-
 
     }
 }
