@@ -1,8 +1,12 @@
 package com.study.studyprojects.codenamesclient;
 
-import com.study.studyprojects.codenamesclient.controller.SelectGameController;
+
 import com.study.studyprojects.codenamesclient.service.GuiService;
 import com.study.studyprojects.codenamesclient.utils.SocketStreams;
+import com.study.studyprojects.model.Message;
+import com.study.studyprojects.model.MessageCodes;
+import com.study.studyprojects.model.mapper.UserAuthMapper;
+import com.study.studyprojects.model.param.UserAuthParam;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -28,6 +32,7 @@ public class Main {
             Socket socket = new Socket(serverUrl, serverPort);
             SocketStreams.out = new ObjectOutputStream(socket.getOutputStream());
             SocketStreams.in = new ObjectInputStream(socket.getInputStream());
+            SocketStreams.socket = socket;
 
         }
         catch (IOException e) {
