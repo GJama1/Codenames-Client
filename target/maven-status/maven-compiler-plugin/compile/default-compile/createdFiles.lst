@@ -1,3 +1,8 @@
+com/study/studyprojects/codenamesclient/service/GuiService.class
+com/study/studyprojects/codenamesclient/controller/SelectGameController.class
+com/study/studyprojects/codenamesclient/facade/RegistrationFacade.class
+com/study/studyprojects/codenamesclient/controller/RegistrationController.class
+com/study/studyprojects/codenamesclient/facade/SelectGameFacade.class
 com/study/studyprojects/codenamesclient/Main.class
-com/study/studyprojects/codenamesclient/GuiLoader.class
-com/study/studyprojects/codenamesclient/HelloController.class
+com/study/studyprojects/codenamesclient/controller/LoginController.class
+com/study/studyprojects/codenamesclient/facade/LoginFacade.class
