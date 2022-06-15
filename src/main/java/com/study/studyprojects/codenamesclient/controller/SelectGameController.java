@@ -14,7 +14,7 @@ public class SelectGameController {
 
         labelUsername.setText("");
 
-        SelectGameFacade.goToLoginScene();
+        SelectGameFacade.logout();
 
     }
 
