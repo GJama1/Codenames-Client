@@ -1,6 +1,7 @@
 package com.study.studyprojects.codenamesclient.facade;
 
 import com.study.studyprojects.codenamesclient.service.GuiService;
+import com.study.studyprojects.codenamesclient.utils.InfoContextHolder;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -9,10 +10,11 @@ import java.io.IOException;
 public class SelectGameFacade {
 
 
-    public static void goToLoginScene() {
+    public static void logout() {
 
         try {
 
+            InfoContextHolder.principal = null;
             GuiService.loadLoginScene();
 
         } catch (IOException e) {

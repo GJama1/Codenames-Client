@@ -1,21 +1,14 @@
 package com.study.studyprojects.codenamesclient.service;
 
-import com.study.studyprojects.codenamesclient.controller.LoginController;
-import com.study.studyprojects.codenamesclient.controller.RegistrationController;
 import com.study.studyprojects.codenamesclient.controller.SelectGameController;
-import com.study.studyprojects.codenamesclient.facade.LoginFacade;
-import com.study.studyprojects.codenamesclient.utils.ControllerInfoContainer;
+import com.study.studyprojects.codenamesclient.utils.InfoContextHolder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @Slf4j
 public class GuiService extends Application {
@@ -75,7 +68,7 @@ public class GuiService extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(GuiService.class.getResource("/view/selectgame.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 800);
 
-        String username = ControllerInfoContainer.labelMap.get("labelUsername");
+        String username = InfoContextHolder.labelMap.get("labelUsername");
 
         SelectGameController selectGameController = fxmlLoader.getController();
         selectGameController.setUsername(username);
