@@ -18,6 +18,12 @@ public class SelectGameController {
 
     }
 
+    @FXML
+    public void onCreateGameButtonClick() {
+
+        SelectGameFacade.createGame();
+    }
+
     public void setUsername(String username) {
         labelUsername.setText(username);
     }
