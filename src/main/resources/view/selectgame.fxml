@@ -58,7 +58,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="buttonCreateGame" alignment="CENTER" layoutX="190.0" layoutY="428.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #d63b1c; -fx-background-radius: 20px;" text="Create Game" textFill="WHITE">
+            <Button fx:id="buttonCreateGame" alignment="CENTER" layoutX="190.0" layoutY="428.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #d63b1c; -fx-background-radius: 20px;" text="Create Game" textFill="WHITE" onAction="#onCreateGameButtonClick">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
